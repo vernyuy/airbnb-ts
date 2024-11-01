@@ -15,24 +15,24 @@ export class PipelineStage extends Stage {
      *    Instantiate the shared stack
      ***********************************/
     const sharedStack = new AirbnbSharedStack(this, "sharedStack");
-    new UserStacks(this, "UserStacks", {
-        airbnbDatabase: sharedStack.airbnbDatabase,
-        airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
-      });
+    // new UserStacks(this, "UserStacks", {
+    //     airbnbDatabase: sharedStack.airbnbDatabase,
+    //     airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
+    //   });
 
-      new BuildingStacks(this, "BuildingStacks", {
-        airbnbDatabase: sharedStack.airbnbDatabase,
-        airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
-      });
+    //   new BuildingStacks(this, "BuildingStacks", {
+    //     airbnbDatabase: sharedStack.airbnbDatabase,
+    //     airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
+    //   });
 
-      new ApartmentStacks(this, "ApartmentStacks", {
-        airbnbDatabase: sharedStack.airbnbDatabase,
-        airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
-      });
+    //   new ApartmentStacks(this, "ApartmentStacks", {
+    //     airbnbDatabase: sharedStack.airbnbDatabase,
+    //     airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
+    //   });
 
-      new RatingsAndFeedbackStack(this, "RatingsAndFeedbackStacks", {
-        airbnbDatabase: sharedStack.airbnbDatabase,
-        airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
-      });
+    //   new RatingsAndFeedbackStack(this, "RatingsAndFeedbackStacks", {
+    //     airbnbDatabase: sharedStack.airbnbDatabase,
+    //     airbnbGraphqlApi: sharedStack.airbnbGraphqlApi,
+    //   });
   }
 }
