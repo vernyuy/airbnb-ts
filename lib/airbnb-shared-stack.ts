@@ -135,11 +135,11 @@ export class AirbnbSharedStack extends Stack {
       value: userPoolClient.userPoolClientId,
     });
 
-    new CfnOutput(this, "GraphQLAPI ID", {
+    new CfnOutput(this, "GraphQLApiID", {
       value: this.airbnbGraphqlApi.apiId!,
     });
 
-    new CfnOutput(this, "GraphQLAPI URL", {
+    new CfnOutput(this, "GraphQLApiURL", {
       value: this.airbnbGraphqlApi.graphqlUrl,
     });
   }
